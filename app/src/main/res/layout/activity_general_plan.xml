@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/time"
+    android:theme="@style/LeaTheme">
+
+    <EditText
+        android:id="@+id/time_entered"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="169dp"
+        android:layout_marginBottom="461dp"
+        android:backgroundTint="@color/colorTheme"
+        android:ems="10"
+        android:inputType="time"
+        android:textColor="@color/colorTheme" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submit_btn"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="381dp"
+        android:text="Let's Go!"
+        android:textColor="#18FFFF"
+        app:iconTint="#18FFFF"
+        app:strokeColor="@color/colorTheme" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:outlineAmbientShadowColor="#FFFFFF"
+        android:outlineSpotShadowColor="#FFFFFF"
+        android:shadowColor="#FFFFFF"
+        android:text="TimeQuest keeps all your data locally on your phone and does not share it"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="250dp"
+        android:gravity="center"
+        android:text="Please give TimeQuest permission to view your app usage"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/permissionsShowMeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/textView3"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="185dp"
+        android:onClick="sendToSettingsPermission"
+        android:text="Show me"
+        android:textColorHighlight="#3F51B5"
+        android:textColorLink="#3F51B5" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="64dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginRight="150dp"
+        app:srcCompat="@color/common_google_signin_btn_text_dark_focused" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="260dp"
+        android:text="min"
+        android:textColor="#FFFFFF" />
+        android:text="TextView" />
+
+</RelativeLayout>

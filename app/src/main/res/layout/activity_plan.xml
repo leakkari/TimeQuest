@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/plan"
+    android:orientation="vertical"
+    android:theme="@style/LeaTheme">
+
+   <com.google.android.material.chip.ChipGroup
+       android:id="@+id/choice_chip_group"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignTop="@id/pickOne"
+       android:layout_marginTop="66dp"
+       app:singleSelection="true">
+
+      <com.google.android.material.chip.Chip
+          android:id="@+id/app_plan"
+          style="@style/Widget.MaterialComponents.Chip.Choice"
+          android:layout_width="275dp"
+          android:layout_height="62dp"
+          android:layout_alignParentStart="true"
+          android:layout_alignParentEnd="true"
+          android:layout_alignParentBottom="true"
+          android:layout_marginStart="66dp"
+          android:layout_marginEnd="60dp"
+          android:layout_marginBottom="294dp"
+          android:text="Reduce Phone Usage in Specific Apps"
+          android:textStyle="bold"
+          app:chipBackgroundColor="@color/colorTheme" />
+
+
+      <com.google.android.material.chip.Chip
+          android:id="@+id/general_plan"
+          style="@style/Widget.MaterialComponents.Chip.Choice"
+          android:layout_width="275dp"
+          android:layout_height="62dp"
+          android:layout_alignParentStart="true"
+          android:layout_alignParentEnd="true"
+          android:layout_alignParentBottom="true"
+          android:layout_marginStart="66dp"
+          android:layout_marginEnd="60dp"
+          android:layout_marginBottom="410dp"
+          android:text="Reduce Phone Usage In General"
+          android:textStyle="bold"
+          app:chipBackgroundColor="@color/colorTheme" />
+
+<!--      <com.google.android.material.chip.Chip-->
+<!--          android:id="@+id/category_plan"-->
+<!--          style="@style/Widget.MaterialComponents.Chip.Choice"-->
+<!--          android:layout_width="275dp"-->
+<!--          android:layout_height="62dp"-->
+<!--          android:layout_alignParentStart="true"-->
+<!--          android:layout_alignParentEnd="true"-->
+<!--          android:layout_alignParentBottom="true"-->
+<!--          android:layout_marginStart="66dp"-->
+<!--          android:layout_marginEnd="60dp"-->
+<!--          android:layout_marginBottom="410dp"-->
+<!--          android:text="Reduce by app category"-->
+<!--          android:textStyle="bold"-->
+<!--          app:chipBackgroundColor="@color/colorTheme" />-->
+   </com.google.android.material.chip.ChipGroup>
+
+   <TextView
+       android:id="@+id/pickOne"
+       android:layout_width="104dp"
+       android:layout_height="wrap_content"
+       android:layout_alignParentStart="true"
+       android:layout_alignParentTop="true"
+       android:layout_alignParentEnd="true"
+       android:layout_alignParentBottom="true"
+       android:layout_marginStart="156dp"
+       android:layout_marginTop="219dp"
+       android:layout_marginEnd="151dp"
+       android:layout_marginBottom="493dp"
+       android:text="Choose One"
+       android:textColor="@color/colorTheme"
+       android:textSize="18sp" />
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:paddingTop="?attr/actionBarSize">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- Main content -->
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#181818"
+            app:itemIconTint="@color/cardview_light_background"
+            app:itemTextColor="@color/cardview_light_background"
+            app:menu="@menu/bottom_navigation_menu" />
+
+        <fragment
+            android:id="@+id/nav_host_fragment_ring"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:accessibilityHeading="true"
+            android:background="#000000"
+            app:defaultNavHost="true"
+            app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:navGraph="@navigation/mobile_nav_update" />
+
+
+<!--        <com.github.mikephil.charting.charts.LineChart-->
+<!--            android:id="@+id/lineChart"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent" />-->
+
+
+    </FrameLayout>
+
+</RelativeLayout>

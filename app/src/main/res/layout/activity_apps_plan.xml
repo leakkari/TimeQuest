@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/LeaTheme"
+    android:background="@drawable/timeapps"
+    tools:context="com.markkuhn.timequest.AppPlanActivity">
+
+
+    <ListView
+        android:id="@+id/checkable_list"
+        android:layout_width="363dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="227dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="141dp"
+        android:scrollbars="vertical" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btshow"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="38dp"
+        android:layout_toStartOf="@+id/letsgo_btn"
+        android:onClick="showSelectedItems"
+        android:text="Show selected items"
+        android:textColor="#18FFFF"
+        app:iconTint="#18FFFF"
+        app:strokeColor="@color/colorTheme" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/letsgo_btn"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="38dp"
+        android:text="Let's Go!"
+        android:textColor="#18FFFF"
+        android:visibility="visible"
+        app:iconTint="#18FFFF"
+        app:strokeColor="@color/colorTheme" />
+
+</RelativeLayout>

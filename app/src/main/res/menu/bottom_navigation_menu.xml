@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <item
+            android:id="@+id/ring_frag"
+            android:icon="@drawable/ic_ring"
+            android:title="Ring" />
+
+        <item
+            android:id="@+id/badges_frag"
+            android:icon="@drawable/ic_badge"
+            android:title="Awards" />
+
+
+        <item
+            android:id="@+id/history_frag"
+            android:icon="@drawable/ic_history"
+            android:title="History" />
+
+        <item
+            android:id="@+id/settings_frag"
+            android:icon="@drawable/ic_settings"
+            android:title="Settings" />
+
+
+
+</menu>

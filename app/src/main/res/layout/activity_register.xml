@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_page"
+    tools:context=".RegisterActivity">
+
+    <EditText
+        android:id="@+id/fullNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="285dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="72dp"
+        android:accessibilityHeading="true"
+        android:backgroundTint="#5ce1e6"
+        android:ems="10"
+        android:hint="Full Name"
+        android:inputType="textEmailAddress"
+        android:singleLine="false"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/pwd_register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/email_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="281dp"
+        android:accessibilityHeading="true"
+        android:backgroundTint="#5ce1e6"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textEmailAddress"
+        android:singleLine="false"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/pwd_register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/pwd_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="162dp"
+        android:accessibilityHeading="true"
+        android:backgroundTint="#5CE1E6"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/loginButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_register" />
+
+    <Button
+        android:id="@+id/registration_btn"
+        android:layout_width="139dp"
+        android:layout_height="63dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="66dp"
+        android:background="@drawable/register_btn"
+        android:backgroundTint="@color/colorTheme"
+
+        android:focusable="auto"
+        android:onClick="register"
+        android:text="Register"
+        android:textColor="@android:color/primary_text_light"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</RelativeLayout>

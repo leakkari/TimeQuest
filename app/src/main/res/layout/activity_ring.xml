@@ -1,0 +1,99 @@
+
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yourring">
+
+
+        <TextView
+            android:id="@+id/txtProgress"
+            android:layout_width="48dp"
+            android:layout_height="19dp"
+            android:layout_alignBottom="@+id/progressBar"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="171dp"
+            android:layout_marginBottom="119dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorTheme" />
+
+        <TextView
+            android:id="@+id/almostThere_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="81dp"
+            android:layout_marginTop="480dp"
+            android:layout_marginEnd="77dp"
+            android:text="Scroll down to see your daily usage"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/almostThere_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="81dp"
+            android:layout_marginTop="830dp"
+            android:layout_marginEnd="77dp"
+
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="85dp"
+            android:layout_marginEnd="72dp"
+            android:layout_marginBottom="107dp"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="180dp"
+            android:layout_marginEnd="68dp"
+            android:layout_marginBottom="230dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/custom_progressbar_drawable"
+            android:secondaryProgress="0" />
+
+<!--        <com.github.mikephil.charting.charts.LineChart-->
+<!--            android:id="@+id/lineChart"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/progressBar"-->
+<!--            android:layout_marginTop="-120dp"-->
+<!--            android:minHeight="100dp" />-->
+
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/bar_graph"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/almostThere_text"
+            android:layout_marginTop="50dp" />
+
+
+
+    </RelativeLayout>
+</ScrollView>

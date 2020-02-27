@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_nav_update"
+    app:startDestination="@+id/ring_frag">
+
+    <fragment
+        android:id="@+id/ring_frag"
+        android:name="com.markkuhn.timequest.navBar.ring.RingFragment"
+        android:label="Ring"
+        tools:layout="@layout/activity_ring" />
+
+    <fragment
+        android:id="@+id/badges_frag"
+        android:name="com.markkuhn.timequest.navBar.badges.BadgesFragment"
+        android:label="Ring"
+        tools:layout="@layout/badges_frag" />
+
+
+    <fragment
+        android:id="@+id/history_frag"
+        android:name="com.markkuhn.timequest.navBar.history.HistoryFragment"
+        android:label="History"
+        tools:layout="@layout/history_frag" />
+
+    <fragment
+        android:id="@+id/settings_frag"
+        android:name="com.markkuhn.timequest.navBar.settings.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/settings_frag" />
+</navigation>

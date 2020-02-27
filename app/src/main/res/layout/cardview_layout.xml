@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="wrap_content"
+    android:layout_height="70dp"
+    android:layout_margin="5dp"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardElevation="5dp"
+    card_view:cardMaxElevation="5dp"
+    card_view:contentPadding="5dp">
+
+    <RelativeLayout
+        android:layout_width="347dp"
+        android:layout_height="56dp"
+
+        android:layout_marginLeft="35dp">
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/Apk_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="6dp"
+            android:layout_toEndOf="@id/imageview"
+            android:layout_toRightOf="@id/imageview"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/Apk_Package_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Apk_Name"
+            android:layout_marginLeft="4dp"
+            android:layout_toEndOf="@id/imageview"
+            android:layout_toRightOf="@id/imageview"
+            android:textColor="#795548"
+
+            />
+
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/app_checkbox"
+        android:layout_width="49dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="308dp"
+        android:layout_marginBottom="1dp"
+        tools:visibility="invisible" />
+
+</androidx.cardview.widget.CardView>

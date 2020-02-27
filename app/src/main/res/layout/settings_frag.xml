@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/settings_page"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="139dp"
+        android:layout_height="63dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/register_btn"
+        android:onClick="clickLogout"
+        android:text="Logout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/change_pwd" />
+
+    <Button
+        android:id="@+id/change_pwd"
+        android:layout_width="139dp"
+        android:layout_height="63dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/register_btn"
+        android:text="Change password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/preferences" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="110dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="248dp"
+        android:src="@drawable/persona"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="140dp"
+        android:text="Username"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/preferences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="248dp"
+        android:text="Preferences"
+        android:textColor="#5CE1E6"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/username_get"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="76dp"
+        android:text="test@gmail.com"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <EditText
+        android:id="@+id/goalTextInput"
+        android:layout_width="132dp"
+        android:layout_height="34dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Goal (min)"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/change_pwd"
+        app:layout_constraintEnd_toStartOf="@+id/saveGoalTimeButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/preferences"
+        app:layout_constraintVertical_bias="0.31" />
+
+    <Button
+        android:id="@+id/saveGoalTimeButton"
+        android:layout_width="70dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="50dp"
+        android:onClick="saveNewGoalTime"
+        android:text="Save"
+        app:layout_constraintBottom_toTopOf="@+id/change_pwd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/goalTextInput"
+        app:layout_constraintTop_toBottomOf="@+id/preferences"
+        app:layout_constraintVertical_bias="0.3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

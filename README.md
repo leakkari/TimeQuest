@@ -1,5 +1,19 @@
 # TimeQuest
-Save Time in your day and reduce your phone usage with TimeQuest
+Save Time in your day and reduce your phone usage with TimeQuest.
+
+After observing many users, one pattern we saw is that people have trouble staying off their phones for a long time.
+
+When doing an assignment or filling up a job application for example, as soon as the task starts getting boring or frustrating, people reach out for their phones.
+
+When people are in an awkward situation, waiting alone for their friends at a restaurant, or avoiding eye contact, people reach out for their phones.
+
+In his article, Harris said that “the average person checks their phone 150 times a day. Why do we do this? Are we making 150 conscious choices?”
+
+The second thing we observed is that once people start using their phones, very few put the phone away after a few minutes. Instead, we see a common pattern where people start scrolling down endlessly or opening new apps and watching new videos.
+
+Are users aware of how much time they’re spending on their phone? Most smartphones nowadays track your usage or your “screen time”. But how effective is it? When people pick up their phones, they don’t plan on scrolling down for hours. They usually mean to use it to complete one specific task that shouldn’t take more than a minute. However, they end up getting distracted and sidetracked.
+
+Instead, imagine if technology companies empowered you to consciously bound your experience to align with what would be “time well spent” for you. Not just bounding the quantity of time you spend, but the qualities of what would be “time well spent".  [Harris]
 
 ## Shared Preferences
 
